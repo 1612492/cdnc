@@ -2,7 +2,7 @@ const config = require("./config/index");
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-// const path = require('path');
+const dotenv = require("dotenv");
 const methodOverride = require("method-override");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
@@ -70,8 +70,10 @@ app.use((err, req, res, next) =>
   })
 );
 
-app.listen(config.port, () => {
-  console.info(`Server started on port ${config.port}`); // eslint-disable-line no-console
+const port = process.env.NODE_ENV === 'test' ? 4000 : 3000
+
+app.listen(port, () => {
+  console.info(`Server started on port ${port}`); // eslint-disable-line no-console
 });
 
 module.exports = app;

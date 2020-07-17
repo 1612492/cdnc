@@ -1,4 +1,6 @@
 const request = require("supertest");
+
+process.env.NODE_ENV = 'test';
 const app = require("../app");
 
 it("GET /", function (done) {
