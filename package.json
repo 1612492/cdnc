@@ -1,0 +1,32 @@
+{
+  "name": "shopping-cart-api",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "mocha --exit"
+  },
+  "dependencies": {
+    "bcryptjs": "~2.4.3",
+    "body-parser": "~1.18.2",
+    "compression": "^1.7.1",
+    "cors": "~2.8.4",
+    "debug": "~3.1.0",
+    "express": "~4.16.2",
+    "express-jwt": "~5.3.0",
+    "express-validation": "~1.0.2",
+    "helmet": "^3.9.0",
+    "http-status": "~1.0.1",
+    "jest": "^26.1.0",
+    "joi": "^13.0.2",
+    "jsonwebtoken": "^8.1.0",
+    "method-override": "~2.3.10",
+    "mocha": "^8.0.1",
+    "mongoose": "^5.9.24",
+    "morgan": "~1.9.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
