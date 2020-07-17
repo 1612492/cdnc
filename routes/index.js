@@ -9,7 +9,7 @@ const cartRoutes = require("./cart");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  return res.json({ message: "Welcome" });
+  return res.json({ message: "Welcome ABC update" });
 });
 
 /* GET about page. */
