@@ -5,7 +5,9 @@ const OrderController = require("../controllers/OrderController");
 // const config = require('../config/index');
 // const paramValidation = require('../config/param-validation');
 
-router.get("/", OrderController.list);
+router.get("/", function (req, res, next) {
+    return res.json({ message: "Oder OK" });
+  });
 router.post("/create", OrderController.placeOrder);
 router.get("/:orderId", OrderController.get);
 router.param("orderId", OrderController.load);
