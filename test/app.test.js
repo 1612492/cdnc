@@ -6,7 +6,7 @@ const app = require("../app");
 it("GET /", function (done) {
   request(app)
     .get("/api/")
-    .expect({ message: "Welcome" })
+    .expect({ message: "Welcome ABC" })
     .end((err, res) => {
       if (err) return done(err);
       return done();
