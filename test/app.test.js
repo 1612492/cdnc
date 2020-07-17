@@ -16,7 +16,7 @@ it("GET /", function (done) {
 it("GET /about", function (done) {
   request(app)
     .get("/api/about")
-    .expect({ message: "?" })
+    .expect({ message: "About" })
     .end((err, res) => {
       if (err) return done(err);
       return done();
